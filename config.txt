@@ -1,0 +1,64 @@
+[sequences]
+	
+	[sequences.photonWarmup]
+	name = 'Photon Warmup'
+	type = 'Warmups'
+	beams = [
+		{name = '6MV',	repeats = 1,	filename = 'sequences/photonop/6MV 10x10cm 100MU.efs', mu = 300}
+	]
+	
+	[sequences.photonop]
+	name = 'Photon Output'
+	type = 'Monthly QA'
+	beams = [
+		{name = '6MV',	repeats = 3,	filename = 'sequences/photonop/6MV 10x10cm 100MU.efs'},
+		{name = '10MV',	repeats = 3,	filename = 'sequences/photonop/10MV 10x10cm 100MU.efs'}
+	]
+	
+	[sequences.electronop]
+	name = 'Electron Output'
+	type = 'Monthly QA'
+	beams = [
+		{name = '6MeV',		repeats = 3,	filename = 'sequences/electronop/6MeV 14x14cm 100MU.efs'},
+		{name = '9MeV',		repeats = 3,	filename = 'sequences/electronop/9MeV 14x14cm 100MU.efs'},
+		{name = '12MeV',	repeats = 3,	filename = 'sequences/electronop/12MeV 14x14cm 100MU.efs'},
+		{name = '15MeV',	repeats = 3,	filename = 'sequences/electronop/15MeV 14x14cm 100MU.efs'}
+	]
+	
+	[sequences.photonmulin]
+	name = 'Photon MU Linearity'
+	type = 'Quarterly QA'
+	beams = [
+		{name = '6MV Reference MU',	repeats = 2,	filename = 'sequences/photonmulin/6MV 10x10cm 100MU.efs'},
+		{name = '6MV 5MU',		repeats = 3,	filename = 'sequences/photonmulin/6MV 10x10cm 100MU.efs',	mu = 5},
+		{name = '6MV 10MU',		repeats = 2,	filename = 'sequences/photonmulin/6MV 10x10cm 100MU.efs',	mu = 10},
+		{name = '6MV 50MU',		repeats = 2,	filename = 'sequences/photonmulin/6MV 10x10cm 100MU.efs',	mu = 50},
+		{name = '6MV 300MU',		repeats = 2,	filename = 'sequences/photonmulin/6MV 10x10cm 100MU.efs',	mu = 300},
+		{name = '6MV 1000MU',		repeats = 1,	filename = 'sequences/photonmulin/6MV 10x10cm 100MU.efs',	mu = 1000},
+		{name = '6MV Reference MU',	repeats = 2,	filename = 'sequences/photonmulin/6MV 10x10cm 100MU.efs'},
+		{name = '10MV Reference MU',	repeats = 2,	filename = 'sequences/photonmulin/10MV 10x10cm 100MU.efs'},
+		{name = '10MV 5MU',		repeats = 3,	filename = 'sequences/photonmulin/10MV 10x10cm 100MU.efs',	mu = 5},
+		{name = '10MV 10MU',		repeats = 2,	filename = 'sequences/photonmulin/10MV 10x10cm 100MU.efs',	mu = 10},
+		{name = '10MV 50MU',		repeats = 2,	filename = 'sequences/photonmulin/10MV 10x10cm 100MU.efs',	mu = 50},
+		{name = '10MV 300MU',		repeats = 2,	filename = 'sequences/photonmulin/10MV 10x10cm 100MU.efs',	mu = 300},
+		{name = '10MV 1000MU',		repeats = 1,	filename = 'sequences/photonmulin/10MV 10x10cm 100MU.efs',	mu = 1000},
+		{name = '10MV Reference MU',	repeats = 2,	filename = 'sequences/photonmulin/10MV 10x10cm 100MU.efs'}
+	]
+
+	[sequences.photondrlin]
+	name = 'Photon Dose Rate Linearity'
+	type = 'Quarterly QA'
+	beams = [
+		{name = '6MV Reference MU',		repeats = 2,	filename = 'sequences/photondrlin/6MV 10x10cm 100MU.efs'},
+		{name = '6MV 400 DR',			repeats = 2,	filename = 'sequences/photondrlin/6MV 10x10cm 100MU.efs', dr = 400},
+		{name = '6MV 250 DR',			repeats = 2,	filename = 'sequences/photondrlin/6MV 10x10cm 100MU.efs', dr = 250},
+		{name = '6MV 100 DR',			repeats = 2,	filename = 'sequences/photondrlin/6MV 10x10cm 100MU.efs', dr = 100},
+		{name = '6MV 40 DR',			repeats = 1,	filename = 'sequences/photondrlin/6MV 10x10cm 100MU.efs', dr = 40},
+		{name = '6MV Reference MU',		repeats = 2,	filename = 'sequences/photondrlin/6MV 10x10cm 100MU.efs'},
+		{name = '10MV Reference MU',		repeats = 2,	filename = 'sequences/photondrlin/10MV 10x10cm 100MU.efs'},
+		{name = '10MV 400 DR',			repeats = 2,	filename = 'sequences/photondrlin/10MV 10x10cm 100MU.efs', dr = 400},
+		{name = '10MV 250 DR',			repeats = 2,	filename = 'sequences/photondrlin/10MV 10x10cm 100MU.efs', dr = 250},
+		{name = '10MV 100 DR',			repeats = 2,	filename = 'sequences/photondrlin/10MV 10x10cm 100MU.efs', dr = 100},
+		{name = '10MV 40 DR',			repeats = 1,	filename = 'sequences/photondrlin/10MV 10x10cm 100MU.efs', dr = 40},
+		{name = '10MV Reference MU',		repeats = 2,	filename = 'sequences/photondrlin/10MV 10x10cm 100MU.efs'}
+	]
