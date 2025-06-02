@@ -1,0 +1,3 @@
+[connection.HOSTNAMEHERE]
+ip = "192.168.30.2"
+linacname = "6480"
